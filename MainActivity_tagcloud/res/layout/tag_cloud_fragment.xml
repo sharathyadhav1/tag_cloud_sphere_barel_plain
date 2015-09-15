@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/transblack"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/xlinlayActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <ImageView
+            android:id="@+id/ximgvwBack"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:scaleType="centerInside"
+            android:src="@drawable/abc_ic_ab_back_mtrl_am_alpha"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/xlinlayRoot"
+        android:layout_below="@+id/xlinlayActionBar"
+        android:layout_above="@+id/xlinlayActionButtons"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"></LinearLayout>
+    <LinearLayout
+        android:id="@+id/xlinlayActionButtons"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_height="?attr/actionBarSize">
+        <ImageView
+            android:id="@+id/ximgvwFlat"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:src="@drawable/ic_btn_flat"
+            android:scaleType="centerInside"
+            />
+        <ImageView
+            android:id="@+id/ximgvwSphere"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:src="@drawable/ic_btn_sphere"
+            android:scaleType="centerInside"/>
+        <ImageView
+            android:id="@+id/ximgvwBarrel"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:src="@drawable/ic_btn_barrel"
+            android:scaleType="centerInside"/>
+    </LinearLayout>
+    </RelativeLayout>
